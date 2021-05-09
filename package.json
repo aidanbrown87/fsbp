@@ -1,0 +1,23 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate project with react frontend and express backend",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\"",
+    "start": "yarn workspace client build && yarn server"
+  },
+  "author": "Aidan Brown",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.1.0",
+    "express": "^4.17.1"
+  },
+  "private": true
+}
