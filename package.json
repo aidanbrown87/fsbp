@@ -11,7 +11,9 @@
     "client": "yarn workspace client start",
     "server": "yarn workspace server start",
     "dev": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn client\"",
-    "start": "yarn workspace client build && yarn server"
+    "start": "yarn workspace client build && yarn server",
+    "cypress:open": "yarn workspace client cypress:open",
+    "cypress:run": "yarn workspace client cypress:run"
   },
   "author": "Aidan Brown",
   "license": "ISC",

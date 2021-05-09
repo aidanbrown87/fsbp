@@ -19,7 +19,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <p>{!data ? "Loading..." : data}</p>
+        <p data-test="server_response">{!data ? "Loading..." : data}</p>
         <a
           className="App-link"
           href="https://reactjs.org"
